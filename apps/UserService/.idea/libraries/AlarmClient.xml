@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="AlarmClient">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Alarm/dist/AlarmClient/AlarmClient.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Alarm/dist/AlarmClient/Alarm.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

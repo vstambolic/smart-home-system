@@ -1,0 +1,222 @@
+.wrapper_pane {
+    -fx-background-color:#384669;
+}
+
+.main_pane {
+    -fx-background-color:#384669;
+}
+
+
+.textfield {
+	-fx-font-size:18;
+	-fx-text-inner-color: #20283C;
+}
+
+.menubutton {
+    -fx-background-color:#FF0000;
+	    -fx-background-radius:0;
+	    	-fx-cursor: hand;
+}
+
+.menubutton:hover {
+    -fx-background-color:#431824;
+}
+
+
+.controlbutton {
+	-fx-background-color:#384669;
+	-fx-cursor: hand;
+	-fx-border-color: transparent;
+}
+
+.controlbutton:hover {
+	-fx-background-color:#181E2E;
+}
+
+
+.app_button {
+	-fx-background-color:#171C2B;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+}
+.box {-fx-padding: 10;
+	-fx-border-style: solid inside;
+    -fx-border-width: 2;
+	-fx-border-insets: 5;
+	-fx-border-radius: 5;
+	-fx-border-color: blue;
+}
+.alarm_row {
+  -fx-border-color: transparent transparent #171D2C transparent;
+  -fx-border-width: 0 0 3 0;
+}
+
+
+
+.scroll-pane {
+    -fx-background-color: #384669;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color: transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color:  white;
+    -fx-background-radius: 5em;
+}
+.scroll-pane > .viewport {
+   -fx-background-color: #384669;
+}
+
+
+
+.alarm-time-label:hover {
+	-fx-background-color: #171D2C ;
+}
+
+/*
+.list-view .list-cell:odd { -fx-background-color: white; /* 1 }
+.list-view .list-cell:even { -fx-background-color: #8f8; /* for information }
+
+.list-view .list-cell:filled:hover { 
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+.list-view .scroll-bar:vertical {
+    -fx-pref-width: 0;
+    -fx-opacity: 0;
+}
+.list-view {
+	-fx-background-insets: 1;
+}
+.list-view .list-cell {
+    -fx-background-color: #384669;
+	-fx-text-fill: white;
+    -fx-font-size: 30;
+    -fx-font-family: "System";
+    -fx-alignment: center;
+}
+
+*/
+
+.inc-dec-button {
+	-fx-background-color:  #384669 ;
+    -fx-background-radius: 0em;
+    -fx-border-color:  #171D2C;
+    -fx-border-width: 0;
+
+}
+.inc-dec-button:hover {
+	-fx-background-color: red ;
+}
+
+
+.combo-box {
+    -fx-background-color: #171D2C;
+    -fx-font-size:18;
+}
+.combo-box .list-cell
+{
+    -fx-background-color: white;
+    -fx-text-fill:#171D2C;
+
+}
+
+.combo-box-popup .list-view
+{
+    -fx-background-color: #171D2C;
+}
+
+.combo-box-popup .list-view .list-cell
+{
+    -fx-background-color: #171D2C;
+    -fx-text-fill:white;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover
+{
+    -fx-text-fill: #171D2C;
+    -fx-background-color:white;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover
+{
+    -fx-background-color: white;
+    -fx-text-fill:#171D2C;
+}
+
+
+.combo-box-base:hover
+{
+    -fx-background-color: red;
+}
+
+.combo-box-base:showing {
+    -fx-color: red;
+}
+.combo-box-base:disabled
+{
+    -fx-color: #171D2C;
+}
+
+.radio-button:selected .radio .dot {
+    -fx-background-color:  #171D2C;
+}
+
+
+.dialog-pane {
+    -fx-background-color:  #171D2C;
+}
+
+
+
+.dialog-pane .button {
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-background-color:  red;
+    -fx-background-radius: 0em;
+    -fx-cursor: hand;
+
+
+}
+.dialog-pane .button:hover {
+    -fx-background-color:  #431824;
+}
+
+.dialog-pane .button:default {
+    -fx-background-color:  #431824;
+    -fx-border-color:#3F283D;
+    -fx-border-width:1;
+}
+
+.dialog-pane .button:default:hover {
+    -fx-background-color: #2C1018;
+}
+
+.date-picker > .text-field {
+    -fx-font-size: 18;
+}
+
+.date-picker > .arrow-button {
+    -fx-background-color:#171D2C;
+}
+.date-picker > .arrow-button:hover{
+    -fx-background-color:red;
+}
+.date-picker > .arrow-button > .arrow {
+    -fx-background-color:#384669;
+}

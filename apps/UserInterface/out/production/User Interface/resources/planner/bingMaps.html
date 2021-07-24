@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>autosuggestuiHTML</title>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <!--  <link href="location.css" rel="stylesheet"/>-->
+</head>
+
+
+<body style="background-color:#384669; font-family:'System'; color:white;">
+
+<div id='printoutPanel' style="font-size: 20px; position: absolute; left:290px"></div>
+<div id='searchBoxContainer'>
+    <input type= 'text' id= 'searchBox' style='width:260px; height:45px; font-size: 22px'/>
+</div>
+<div id='myMap' style='border-style:solid; border-width:3px 0px 3px 0px; border-color: #181E2E; background-color:#181E2E; width: 100vw; height: 80%; position: absolute; right: 0px; top:70px'></div>
+
+<script type='text/javascript'>
+            var address;
+            var latitude=0.0;
+            var longitude=0.0;
+
+
+            function getAddress() {
+                return address;
+            }
+            function getLatitude() {
+                return latitude;
+            }
+            function getLongitude() {
+                return longitude;
+            }
+
+
+            function setParameters(add, lat, lon) {
+                address = add;
+                latitude = lat;
+                longitude = lon;
+            }
+            function setAddress(a) {
+                address = a;
+            }
+            function setLatitude(l) {
+                latitude = l;
+            }
+            function setLongitude(l) {
+                longitude = l;
+            }
+
+            function printOutPanel() {
+                document.getElementById('printoutPanel').innerHTML = address +'<br> Lat: ' + latitude +' &nbsp;&nbsp;&nbsp;Lon: ' + longitude;
+            }
+
+            function loadMapScenario() {
+
+                var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
+<!--                    center: new Microsoft.Maps.Location( 44.8,20.4489),-->
+                    center: new Microsoft.Maps.Location(latitude, longitude),
+                    zoom: 12
+                    ,customMapStyle: myStyle
+
+                });
+
+                 map.entities.clear();
+                 var pp = new Microsoft.Maps.Pushpin(map.getCenter(), { color: 'red' });
+                 map.entities.push(pp);
+
+
+                Microsoft.Maps.loadModule('Microsoft.Maps.AutoSuggest', function () {
+                    var options = {
+                        maxResults: 4,
+                        map: map
+                    };
+                    var manager = new Microsoft.Maps.AutosuggestManager(options);
+                    manager.attachAutosuggest('#searchBox', '#searchBoxContainer', selectedSuggestion);
+                });
+                function selectedSuggestion(suggestionResult) {
+                    map.entities.clear();
+                    map.setView({ bounds: suggestionResult.bestView });
+                    var pushpin = new Microsoft.Maps.Pushpin(suggestionResult.location, { color: 'red' });
+                    map.entities.push(pushpin);
+
+
+                    address = suggestionResult.formattedSuggestion;
+                    latitude =  suggestionResult.location.latitude;
+                    longitude =  suggestionResult.location.longitude;
+                    printOutPanel()
+
+
+
+                }
+
+            }
+
+
+
+
+<!-- Style Map -->
+            var myStyle = {
+                    "version": "1.0",
+                    "settings": {
+                        "landColor": "#0B334D"
+                    },
+                    "elements": {
+                        "mapElement": {
+                            "labelColor": "#FFFFFF",
+                            "labelOutlineColor": "#000000"
+                        },
+                        "political": {
+                            "borderStrokeColor": "#144B53",
+                            "borderOutlineColor": "#00000000"
+                        },
+                        "point": {
+                            "iconColor": "#0C4152",
+                            "fillColor": "#000000",
+                            "strokeColor": "#0C4152"
+                        },
+                        "transportation": {
+                            "strokeColor": "#000000",
+                            "fillColor": "#000000"
+                        },
+                        "highway": {
+                            "strokeColor": "#158399",
+                            "fillColor": "#000000"
+                        },
+                        "controlledAccessHighway": {
+                            "strokeColor": "#158399",
+                            "fillColor": "#000000"
+                        },
+                        "arterialRoad": {
+                            "strokeColor": "#157399",
+                            "fillColor": "#000000"
+                        },
+                        "majorRoad": {
+                            "strokeColor": "#157399",
+                            "fillColor": "#000000"
+                        },
+                        "railway": {
+                            "strokeColor": "#146474",
+                            "fillColor": "#000000"
+                        },
+                        "structure": {
+                            "fillColor": "#115166"
+                        },
+                        "water": {
+                            "fillColor": "#021019"
+                        },
+                        "area": {
+                            "fillColor": "#115166"
+                        }
+                    }
+                };
+
+
+        </script>
+<script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=Nv0vVg9tB0rbey24ZNWL~UoDt00L7OmmGEw_eBQ0tQg~AmrsWuho1exu17gYO9p1NSjc3r8BpflPT1vpVrCv-cyAt9D5F3qYDcbuAjo5yWAH&callback=loadMapScenario' async defer></script>
+</body>
+</html>
+<!-- API KEY NE DIRAJ OVO: Nv0vVg9tB0rbey24ZNWL~UoDt00L7OmmGEw_eBQ0tQg~AmrsWuho1exu17gYO9p1NSjc3r8BpflPT1vpVrCv-cyAt9D5F3qYDcbuAjo5yWAH-->

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Alarm/src/Alarm.iml" filepath="$PROJECT_DIR$/../Alarm/src/Alarm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EventManager/EventManager.iml" filepath="$PROJECT_DIR$/../EventManager/EventManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MusicPlayer/MusicPlayer.iml" filepath="$PROJECT_DIR$/../MusicPlayer/MusicPlayer.iml" />
+      <module fileurl="file://$USER_HOME$/IdeaProjects/UserInterface/User Interface.iml" filepath="$USER_HOME$/IdeaProjects/UserInterface/User Interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UserService.iml" filepath="$PROJECT_DIR$/UserService.iml" />
+    </modules>
+  </component>
+</project>

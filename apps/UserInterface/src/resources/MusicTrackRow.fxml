@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="56.0" prefWidth="678.0" styleClass="alarm_row" stylesheets="@../stylesheets/fullpack.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.musicplayer.TrackRowController">
+    <children>
+        <VBox maxWidth="-Infinity" prefHeight="59.0" prefWidth="756.0">
+            <children>
+                <Label fx:id="trackLabel" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="40.0" prefWidth="728.0" text="Redbone" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                    <font>
+                        <Font size="28.0" />
+                    </font>
+                </Label>
+                <Label fx:id="infoLabel" alignment="CENTER_RIGHT" prefHeight="19.0" prefWidth="814.0" text="Childish Gambino (Album, 2018)" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+        </VBox>
+    </children>
+   <padding>
+      <Insets left="20.0" />
+   </padding>
+</HBox>

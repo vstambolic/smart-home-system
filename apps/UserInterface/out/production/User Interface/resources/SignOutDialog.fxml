@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane prefHeight="127.0" prefWidth="534.0" stylesheets="@../stylesheets/fullpack.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <Label alignment="CENTER" prefHeight="75.0" prefWidth="553.0" text="Are you sure you want to sign out?" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+   </content>
+   <buttonTypes>
+      <ButtonType fx:constant="YES" />
+      <ButtonType fx:constant="CANCEL" />
+   </buttonTypes>
+   <effect>
+      <InnerShadow height="8.97" radius="5.952500000000001" width="16.84">
+         <color>
+            <Color red="0.21960784494876862" green="0.27450981736183167" blue="0.4117647111415863" />
+         </color>
+      </InnerShadow>
+   </effect>
+</DialogPane>

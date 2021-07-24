@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="detailsBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="678.0" styleClass="wrapper_pane" stylesheets="@../stylesheets/fullpack.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.users.DetailsController">
+    <children>
+        <HBox prefHeight="99.0" prefWidth="678.0" styleClass="alarm_row">
+            <children>
+                <Label prefHeight="132.0" prefWidth="645.0" stylesheets="@../stylesheets/fullpack.css" text="User Details" textFill="WHITE">
+                    <font>
+                        <Font size="80.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Label>
+                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#returnAction" prefHeight="131.0" prefWidth="144.0" styleClass="controlbutton" text="&lt;" textFill="WHITE">
+                    <font>
+                        <Font size="65.0" />
+                    </font>
+                </Button>
+            </children>
+            <padding>
+                <Insets bottom="1.0" />
+            </padding>
+        </HBox>
+      <VBox prefHeight="486.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="45.0" prefWidth="707.0" style="fx-font-style: bold;" text="First name:" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="firstNameLabel" prefHeight="45.0" prefWidth="687.0" styleClass="alarm_row" stylesheets="@../stylesheets/fullpack.css" text="Vasilije" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="45.0" prefWidth="884.0" style="fx-font-style: bold;" text="Last name:" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="lastNameLabel" prefHeight="45.0" prefWidth="1004.0" styleClass="alarm_row" stylesheets="@../stylesheets/fullpack.css" text="Stambolic" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="45.0" prefWidth="913.0" style="fx-font-style: bold;" text="e-mail:" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailLabel" prefHeight="45.0" prefWidth="1030.0" styleClass="alarm_row" stylesheets="@../stylesheets/fullpack.css" text="vasilije.stambolic@gmail.com" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="45.0" prefWidth="816.0" style="fx-font-style: bold;" text="Username:" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="usernameLabel" prefHeight="45.0" prefWidth="858.0" styleClass="alarm_row" stylesheets="@../stylesheets/fullpack.css" text="vaki" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="45.0" prefWidth="678.0" style="fx-font-style: bold;" text="Address:" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="addressLabel" alignment="TOP_LEFT" prefHeight="53.0" prefWidth="578.0" styleClass="alarm_row" stylesheets="@../stylesheets/fullpack.css" text="Milene Lazarevic 8, Guca, Serbia h ssssss  d sdv s  sd ds d " textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="29.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="30.0" right="30.0" />
+         </padding>
+      </VBox>
+    </children>
+</VBox>

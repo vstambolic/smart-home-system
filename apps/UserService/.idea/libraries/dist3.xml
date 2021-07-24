@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="dist3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../MusicPlayer/dist/MusicPlayer.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../MusicPlayer/dist/MusicPlayerClient.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

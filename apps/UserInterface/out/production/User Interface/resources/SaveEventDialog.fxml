@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane minHeight="-Infinity" prefHeight="320.0" prefWidth="580.0" stylesheets="@../../stylesheets/fullpack.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.planner.SaveEventDialogController">
+    <buttonTypes>
+        <ButtonType fx:constant="OK" />
+      <ButtonType fx:constant="CANCEL" />
+    </buttonTypes>
+    <effect>
+        <InnerShadow height="8.97" radius="5.952500000000001" width="16.84">
+            <color>
+                <Color red="0.21960784494876862" green="0.27450981736183167" blue="0.4117647111415863" />
+            </color>
+        </InnerShadow>
+    </effect>
+   <content>
+      <VBox prefHeight="186.0" prefWidth="580.0">
+         <children>
+            <HBox prefHeight="44.0" prefWidth="513.0">
+               <children>
+                  <Label prefHeight="84.0" prefWidth="420.0" text="Travel mode:" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="58.0" prefWidth="267.0" text="Driving" textFill="WHITE">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="29.0" prefWidth="513.0">
+               <children>
+                  <Label prefHeight="58.0" prefWidth="420.0" text="Travel distance from your current location:" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="travelDistanceLabel" prefHeight="58.0" prefWidth="267.0" text="36.55 km" textFill="WHITE">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="513.0">
+               <children>
+                  <Label prefHeight="58.0" prefWidth="420.0" text="Travel duration from your current location:" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="travelDurationLabel" prefHeight="58.0" prefWidth="267.0" text="36 mins" textFill="WHITE">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="notificationLabel" alignment="BOTTOM_LEFT" prefHeight="114.0" prefWidth="557.0" text="Your event starts in 6 minutes. You won't be able to make it in time. Create event anyway?" textFill="RED" visible="false" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </content>
+</DialogPane>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane prefWidth="966.0" style="-fx-background-color: #384669;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.users.RegisterController">
+   <center>
+      <StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="678.0" styleClass="wrapper_pane" stylesheets="@../stylesheets/fullpack.css">
+         <children>
+            <VBox fx:id="registerBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="678.0" styleClass="wrapper_pane" stylesheets="@../stylesheets/fullpack.css">
+               <children>
+                  <HBox prefHeight="99.0" prefWidth="678.0" styleClass="alarm_row">
+                     <children>
+                        <Label prefHeight="132.0" prefWidth="645.0" stylesheets="@../stylesheets/fullpack.css" text=" Register" textFill="WHITE">
+                           <font>
+                              <Font size="80.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="1.0" />
+                     </padding>
+                  </HBox>
+                  <VBox prefHeight="483.0" prefWidth="649.0" spacing="20.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="907.0" spacing="70.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="210.0" text="First name:" textFill="WHITE">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="firstNameTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#registerAction" prefHeight="44.0" prefWidth="365.0" promptText="Enter your name" style="-fx-text-inner-color: #171D2B;">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="28.0" prefWidth="907.0" spacing="70.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="210.0" text="Last name:" textFill="WHITE">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="lastNameTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#registerAction" prefHeight="44.0" prefWidth="365.0" promptText="Enter your last name" style="-fx-text-inner-color: #171D2B;">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="28.0" prefWidth="907.0" spacing="70.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="210.0" text="e-mail:" textFill="WHITE">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="emailTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#registerAction" prefHeight="44.0" prefWidth="365.0" promptText="Enter your e-mail" style="-fx-text-inner-color: #171D2B;">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="28.0" prefWidth="907.0" spacing="70.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="210.0" text="Username:" textFill="WHITE">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="usernameTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#registerAction" prefHeight="44.0" prefWidth="365.0" promptText="Enter your username" style="-fx-text-inner-color: #171D2B;">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="28.0" prefWidth="907.0" spacing="70.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="210.0" text="Password:" textFill="WHITE">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="passwordTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#registerAction" prefHeight="44.0" prefWidth="365.0" promptText="Enter your password" style="-fx-text-inner-color: #171D2B;">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="28.0" prefWidth="773.0" spacing="70.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="210.0" text="Home address:" textFill="WHITE">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="locationButton" mnemonicParsing="false" onAction="#locationAction" prefHeight="44.0" prefWidth="367.0" style="-fx-background-color: #171C2B;" styleClass="menubutton" stylesheets="@../stylesheets/fullpack.css" text="Select your home address" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Label fx:id="messageLabel" alignment="CENTER" prefHeight="44.0" prefWidth="799.0" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" top="20.0" />
+                     </padding>
+                  </VBox>
+                  <ButtonBar prefHeight="111.0" prefWidth="678.0">
+                     <buttons>
+                        <Button layoutX="166.0" layoutY="40.0" mnemonicParsing="false" onAction="#cancelAction" prefHeight="40.0" prefWidth="122.0" style="-fx-background-color: red;" styleClass="menubutton" stylesheets="@../stylesheets/fullpack.css" text="Cancel" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#registerAction" prefHeight="40.0" prefWidth="122.0" style="-fx-background-color: red;" styleClass="menubutton" stylesheets="@../stylesheets/fullpack.css" text="Register" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </buttons>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </ButtonBar>
+               </children>
+            </VBox>
+         </children>
+      
+      </StackPane>
+   </center>
+</BorderPane>

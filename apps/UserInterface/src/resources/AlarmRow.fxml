@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="56.0" prefWidth="678.0" styleClass="alarm_row" stylesheets="@../stylesheets/fullpack.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.alarm.AlarmRowController">
+   <children>
+      <Label fx:id="timeLabel" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="114.0" text="08:00" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <VBox maxWidth="-Infinity" prefHeight="61.0" prefWidth="502.0">
+         <children>
+            <Label fx:id="labelLabel" prefHeight="40.0" prefWidth="301.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="repetitiveLabel" prefHeight="19.0" prefWidth="364.0" text="Only Ring Once" textFill="WHITE" />
+         </children>
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin>
+      </VBox>
+      <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox maxWidth="-Infinity" prefHeight="61.0" prefWidth="502.0">
+         <children>
+            <Label fx:id="trackLabel" prefHeight="40.0" prefWidth="301.0" text="song.mp3" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="artistLabel" prefHeight="19.0" prefWidth="364.0" text="Artist" textFill="WHITE" />
+         </children>
+      </VBox>
+      <BorderPane fx:id="switchButtonWrapper" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="71.0" prefWidth="100.0" />
+   </children>
+</HBox>
